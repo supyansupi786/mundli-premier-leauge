@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPL SEASON-2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url(https://t4.ftcdn.net/jpg/02/19/80/13/360_F_219801337_3kbasqLvgbUxAGVDH8QS35Sm4SEiPJFJ.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        .set1,
+        .set2 {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .team {
+            height: 200px;
+            width: 200px;
+            color: white;
+            border: 2px solid red;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-size: cover;
+        }
+
+        .details {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .team1 {
+            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNsj5fPkDewlKFXr9vQ8zsZsPVJsSUkN0-xEgx5PVGbDbsEwOLfJ3Mw5WxqZDIne96DuG89Crmf5O3GtpCJw3hhpAaKFAXoKIf-ElURYez2pUNCyIprblLOxO-6iDje39RtvMouOWi0YNcc2PROKjeGPOcl5XmVMPWkWo7w5QOIFVCp0HbNQ3k2N8O_f7H/s320/1707372754618.jpg');
+        }
+
+        .team2 {
+            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHmOlEqbHLdef8rzgnmZWwuEcDO5iVUAQwh9B-QvKwKIG0u4sGqNK2hbg61oBlh1xf5pFhgynj9X5flWIw_EDJCnjuDld2D6rX8cHfDlL8MT2U1SfloZqPLYiOKEh_a_VJes4H9YZC74T9Qbg7uGRhpUxkIRt5eOFsKV7wGcbgqyfoBPIPuULVC9BG1njA/w257-h202/1707372754682.jpg');
+        }
+
+        .team3 {
+            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrZNU5kIEee_wyCCXWu2r8QhHk9J6FN2VutembAlxuUZ6bi8c7smftm3OuZIVIrhoQ3naXJjjT5OvfoqYVl165-RmtWi1Type9OksfupH-BHD6O_28nPj-rJJzkB1v9cdwE3tVhgbTiY8ek6K_qfDNGtrFPPhG7bHPY5AOgTPrX-D_LomabPeKWHyk1xy-/s320/1707372754741.jpg');
+        }
+
+        .team4 {
+            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVYDIVqv1PLnojgQV56IOeYXuBfmN7VcAZQ-Y0mJdADVx-AE_cLxLW4s9yIQ3tpM3J15U-1VNlu5mFrWKQk9nti8uQCAml1UZ4rHV3pzbyXUQkJG7009c2ojTH7_WZMQT9YlS_nqMn6OHF8LdDYwibEq6JZlCvTvp_rxWykt8W5UtVlanSNCtUA5Rib5Rz/s320/1707372754558.jpg');
+        }
+
+        .team5 {
+            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMCj4ZRcoxG08MDQHTF8s7oXX4f7Xme9wrVHaxDD6agNyi38O82syWafC5q5TbhmWuBhCZXEPYAg8SnA2TbMlmrEOntr1HfAC_nlevHU-Sqg1pBbGuP7nho1hEshwol1wDZx-nJeTDmmWBvae77nBEXgfpnTaBqmfcaIiK0KUt_AnV8cZga1EJdlj8afix/s320/1707372754503.jpg');
+        }
+
+        .team6 {
+            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNXvN_Lr7z3BX5Ce9FkXfr71sNMqPD9gNKM84WeDJA5Nzh071HGQJjlUaZiUHHAg48JFzsWoWWgMPYzyFrNlcGPiabZ9XzLnR86NeLnW4uJTaAXsH8AYX3Src7ToDA7hP4gfCh1u-BgnAlFGnuJJXfxABzGTQIZ3_Jgl4dn-cyzJp8Je9AkFKCRPmeyoAH/s320/1707372754802.jpg');
+        }
+        ul{
+            color: rgb(255, 255, 255);
+            background-color: black ;
+            opacity: 95%;
+            height: max-content;
+            width: max-content;
+        }
+        .name{
+            margin-top: 10PX;
+            border: 2px solid rgb(255, 13, 13);
+            background-color: black;
+            color: white;
+
+        }
+
+       button {
+             
+
+     position: absolute;
+     margin-left: 75px;
+     border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">MUNDLI PREMIER LEAGUE SEASON-2</h1>
+    <h2 style="text-align: center;">TEAMS</h2>
+    <div>
+        <div class="set1">
+            <div>
+                <div class="team  team1" id="team1" >
+                    <b class="name">BLACK HAWKS</b>
+                    <div class="details" id="details1">
+                       
+                       
+                    </div>
+                </div>
+                <br/>
+                <button  class="button" onclick="toggleDetails('details1')">PLAYERS DETAILS</button>
+            </div>
+
+            <div>
+                <div class="team team2" id="team2">
+                    <b class="name">RISING STAR</b>
+                    <div class="details" id="details2">
+                        
+                    </div>
+                </div>
+                <br/>
+                <button onclick="toggleDetails('details2')">PLAYERS DETAILS</button>
+            </div>
+
+            <div>
+                <div class="team team3" id="team3">
+                    <b class="name">YOUNG CHALLENGERS</b>
+                    <div class="details" id="details3">
+                       
+                    </div>
+                </div>
+                <br/>
+                <button onclick="toggleDetails('details3')">PLAYERS DETAILS</button>
+            </div>
+        </div>
+
+        <div class="set2">
+            <div>
+                <div class="team team4" id="team4">
+                    <b class="name"> BROTHERS MUNDLI</b>
+                    <div class="details" id="details4">
+                        
+                    </div>
+                </div>
+                <br/>
+                <button onclick="toggleDetails('details4')">PLAYERS DETAILS</button>
+            </div>
+
+            <div>
+                <div class="team team5" id="team5">
+                    <b class="name"> PRAMNA FRIENDS</b>
+                    <div class="details" id="details5">
+                       
+                    </div>
+                </div>
+                <br/>
+                <button onclick="toggleDetails('details5')">PLAYERS  DETAILS</button>
+            </div>
+
+            <div>
+                <div class="team  team6" id="team6">
+                    <b class="name">CHINNU TIGERS</b>
+                    <div class="details" id="details6">
+                        
+                    </div>
+                </div>
+                <br/>
+                <button onclick="toggleDetails('details6')">PLAYERS  DETAILS</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(detailsId) {
+            var details = document.getElementById(detailsId);
+            details.style.display = details.style.display === 'none' ? 'block' : 'none';
+    
+            // Redirect to a new page when details are displayed
+            if (details.style.display === 'block') {
+                // Define the URLs for each team's players details page
+                var teamDetailsPages = {
+                    'details1': 'BH.html',
+                    'details2': 'RS.html',
+                    'details3': 'YCM.html',
+                    'details4': 'BM.html',
+                    'details5': 'PFM.html',
+                    'details6': 'CT.html'
+                };
+    
+                // Get the current details page URL
+                var currentDetailsPage = teamDetailsPages[detailsId];
+    
+                // Redirect to the new page
+                if (currentDetailsPage) {
+                    window.location.href = currentDetailsPage;
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>
